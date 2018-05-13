@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <script src="js/picturefill.js"></script>
+  </head>
+  <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-mobile" width="75" height="22">
+            <use xlink:href="#icon-logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="page-header__logo-tablet" width="147" height="40">
+            <use xlink:href="#icon-logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="page-header__logo-desktop" width="147" height="40">
+            <use xlink:href="#icon-logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="promo promo--mini">
+        <div class="promo__wrapper promo__wrapper--mini">
+            <h2 class="promo__title promo__title--big">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
+      </div>
+      <section class="history">
+        <div class="history__wrapper">
+          <h2 class="visually-hidden">Ваша история</h2>
+          <p class="history__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="history__promo history__promo--hidden">Пожалуйста, заполните форму ниже:</span></p>
+          <form class="history__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="history__form-list">
+              <li class="history__form-item history__form-item--user-info">
+                <fieldset class="history__form-field">
+                  <div class="history__field-wrapper">
+                    <p class="history__field-item history__field-item--user-info">
+                      <label class="history__form-label history__form-label--red" for="surname">Фамилия:</label>
+                      <input class="history__form-input history__form-input--retreat" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+                    </p>
+                    <p class="history__field-item history__field-item--user-info">
+                      <label class="history__form-label history__form-label--red" for="name">Имя:</label>
+                      <input class="history__form-input history__form-input--retreat" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+                    </p>
+                    <p class="history__field-item history__field-item--user-info">
+                      <label class="history__form-label history__form-label--red" for="patronymic">Отчество:</label>
+                      <input class="history__form-input history__form-input--retreat" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--gray history__form-item--progress">
+                <fieldset class="history__form-field history__form-field--progress">
+                    <legend class="history__form-title history__form-title--progress">Ваши безбашенные достижения в путешествии</legend>
+                  <div class="history__field-wrapper">
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-1" id="progress-1" checked>
+                      <label class="history__form-picker" for="progress-1">Сделал селфи с акулой</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-2" id="progress-2" checked>
+                      <label class="history__form-picker" for="progress-2">Обгорел на пляже</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-3" id="progress-3">
+                      <label class="history__form-picker" for="progress-3">Видел Чака Норриса</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-4" id="progress-4">
+                      <label class="history__form-picker" for="progress-4">Накупил сувениров</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-5" id="progress-5" checked>
+                      <label class="history__form-picker" for="progress-5">Удержал башню</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-6" id="progress-6">
+                      <label class="history__form-picker" for="progress-6">Разгромил отель</label>
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--contacts">
+                <fieldset class="history__form-field history__form-field--contacts">
+                  <legend class="history__form-title history__form-title--contacts">Контактная информация</legend>
+                  <div class="history__field-wrapper history__field-wrapper--contacts">
+                    <p class="history__field-item history__field-item--contacts">
+                        <label class="history__form-label history__form-label--red history__form-label--contacts" for="tel">Номер телефона</label>
+                        <input class="history__form-input history__form-input--contacts" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                      </p>
+                      <p class="history__field-item history__field-item--contacts">
+                        <label class="history__form-label history__form-label--red history__form-label--contacts" for="email">Адрес почты</label>
+                        <input class="history__form-input history__form-input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                      </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--gray history__form-item--apps">
+                <fieldset class="history__form-field history__form-field--apps">
+                  <legend class="history__form-title history__form-title--apps">С каким приложением путешествовали?</legend>
+                  <div class="history__field-wrapper history__field-wrapper--apps">
+                    <p class="history__field-item history__field-item--apps">
+                      <input class="history__form-aplication visually-hidden" type="radio" name="application" id="pink-ios" checked>
+                      <label class="history__form-pink" for="pink-ios">Pink для iOS</label>
+                    </p>
+                    <p class="history__field-item history__field-item--apps">
+                      <input class="history__form-aplication visually-hidden" type="radio" name="application" id="pink-android">
+                      <label class="history__form-pink" for="pink-android">Pink на Android</label>
+                    </p>
+                    <p class="history__field-item history__field-item--apps">
+                      <input class="history__form-aplication visually-hidden" type="radio" name="application" id="windows-phone">
+                      <label class="history__form-pink" for="windows-phone">Windows Phone</label>
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--emotions">
+                <fieldset class="history__form-field history__form-field--emotions">
+                  <legend class="history__form-title history__form-title--emotions">Опишите свои эмоции</legend>
+                  <div class="history__field-wrapper">
+                    <p class="history__field-item">
+                      <textarea class="history__form-textarea" name="description" rows="3" cols="50" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+            </ul>
+            <div class="history__form-button">
+              <button class="history__form-submit" type="submit">Отправить форму</button>
+              <p class="history__form-required"><span class="history__form-star">*</span>— обязательные <span class="history__form-required-text">для заполнения </span>поля</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper page-footer__wrapper--form">
+        <a class="page-footer__logo page-footer__logo--form" href="index.html">
+          <svg class="page-footer__logo-image-mobile" width="147" height="40">
+            <use xlink:href="#icon-logo-pink-blue-mobile"></use>
+          </svg>
+          <svg class="page-footer__logo-image-desktop" width="147" height="40">
+            <use xlink:href="#icon-logo-pink-blue-desktop"></use>
+          </svg>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Мы в Твиттер</span>
+                <svg class="social__item-twitter" width="18" height="14">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy/">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg class="social__item-facebook" width="18" height="20">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+                <svg class="social__item-facebook" width="18" height="14">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__link-image" width="43" height="35">
+              <use xlink:href="#icon-logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="popup popup--submitted">
+      <div class="popup__wrapper">
+        <h3>Ваша заявка отправлена</h3>
+        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br> оповестим вас.</p>
+      </div>
+      <div class="popup__bottom">
+        <button>Закрыть окно</button>
+      </div>
+    </div>
+    <div class="popup popup--failed">
+      <div class="popup__wrapper">
+        <h3>Что-то пошло не так!</h3>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+        <div class="popup__dale">
+          <button>Ok</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
